@@ -2,6 +2,8 @@
 
 A high-performance, lease-based distributed garbage collection system for microservices, built with Rust and gRPC. This sidecar service automatically manages the lifecycle of temporary files, preventing the generation of orphaned data and reducing infrastructure costs. 
 
+Demo Video: https://youtu.be/ZN6iy99wens
+
 <img width="856" alt="Screenshot 2025-05-30 at 12 44 26 PM" src="https://github.com/user-attachments/assets/3b50b11b-5040-43d9-92f8-588c87f3f08c" />
 
 ## The Problem it Solves
@@ -16,8 +18,6 @@ User uploads a file → Processing service crashes → File remains forever
 **With GarbageTruck:**  
 User uploads a file → Service receives a 1-hour lease → Service crashes → File is auto-deleted after 1 hour  
 **Result:** Clean system, no orphaned resources
-
-Demo Video: https://youtu.be/ZN6iy99wens
 
 ## 🚀 Quick Start
 
